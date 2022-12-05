@@ -119,8 +119,12 @@ while True:
         ball.setx(340)
         ball.dx *= -1
         winsound.PlaySound("./sounds/bounce.wav", winsound.SND_ASYNC)
+        ball.dx *= 1.03
+        ball.dy *= 1.03
 
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40): 
         ball.setx(-340)
         ball.dx *= -1
         winsound.PlaySound("./sounds/bounce.wav", winsound.SND_ASYNC)
+        ball.dx *= 1.02
+        ball.dy *= 1.02
